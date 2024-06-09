@@ -1,0 +1,17 @@
+---
+import HeroImg from '../../assets/ceo-hero-home.webp';
+import MainLogo from '../../assets/logo-ceo.svg';
+import ScheduleAppointment from '../../interface/BtnScheduleAppointment.astro';
+---
+<div class="container mx-auto">
+	<div class="md:flex flex-row items-center justify-center">
+		<div class="md:w-1/2 px-12 py-4">
+			<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="max-w-sm mx-auto" />
+			<p class="text-blue">En CEO, Centro de Especialidades Oftalmológicas, estamos comprometidos con su bienestar ocular a través de un especialista altamente calificado.</p>
+			<ScheduleAppointment />
+		</div>
+		<div class="md:w-1/2">
+			<img src={HeroImg.src} alt="CEO's Message" class="w-full h-auto">
+		</div>
+	</div>
+</div>

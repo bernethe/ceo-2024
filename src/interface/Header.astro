@@ -1,0 +1,74 @@
+---
+import {LINKS} from '../_globals.js';
+import MainLogo from '../assets/logo-ceo.svg';
+import IcoFB from '../svg/IcoFb.astro';
+import IcoIG from '../svg/IcoIg.astro';
+import IcoLI from '../svg/IcoIn.astro';
+import IcoWA from '../svg/IcoWa.astro';
+const MAIN_MENU = [
+	{
+		label: 'Inicio',
+		url: '/#'
+	},
+	{
+		label: 'El Especialista',
+		url: '/#'
+	},
+	{
+		label: 'Cirugías',
+		url: '/#'
+	},
+	{
+		label: 'Preguntas',
+		url: '/#'
+	},
+	{
+		label: 'Contacto',
+		url: '/#'
+	},
+];
+---
+<header class="border-b border-blue">
+	<div class="container mx-auto">
+		<div class="flex gap-4 items-center">
+			<div>
+				<a href="/" class="block">
+					<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-[135px]" />
+				</a>
+			</div>
+			<nav class="font-bold flex-1">
+				<ul>
+					{
+						MAIN_MENU.map( item => <li class="inline-block">
+							<a href={item.url} class="block p-2 hover:bg-blue hover:text-sky">{item.label.toUpperCase()}</a>
+						</li>)
+					}
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<li class="inline-block w-8">
+						<a href={LINKS.WhatsApp} target="_blank">
+							<IcoWA />
+						</a>
+					</li>
+					<li class="inline-block w-8">
+						<a href={LINKS.Instagram} target="_blank">
+							<IcoIG />
+						</a>
+					</li>
+					<li class="inline-block w-8">
+						<a href={LINKS.Facebook} target="_blank">
+							<IcoFB />
+						</a>
+					</li>
+					<li class="inline-block w-8">
+						<a href={LINKS.LinkedIn} target="_blank">
+							<IcoLI />
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>

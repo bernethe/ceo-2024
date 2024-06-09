@@ -1,0 +1,17 @@
+---
+import MainLogoWhite from '../assets/logo-ceo-tinta.svg';
+import {LINKS} from '../_globals.js';
+---
+<footer class="bg-blue text-white">
+	<div class="container mx-auto">
+		<div class="max-w-[200px] w-1/2 mx-auto">
+			<img src={MainLogoWhite.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo">
+		</div>
+		<div class="flex flex-wrap items-center justify-between py-4">
+			<div class="w-full md:w-1/2 text-center md:text-left">
+				<p>CEO - Cirugías Dr. Nelson Bravo García, Clínica Bíblica, Santa Ana.<br />
+					<a href={LINKS.WhatsApp} target="_blank">8713-7180</a>, Correo electrónico: <a href={`mailto:${LINKS.Email}`}>{LINKS.Email}</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
