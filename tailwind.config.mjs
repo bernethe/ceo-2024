@@ -9,10 +9,10 @@ export default {
 			colors: {
 				transparent: 'transparent',
 				current: 'currentColor',
-				'white': '#fff',
-				'semiblack': '#0b0c10',
-				'black': '#000',
-				'gray': {
+				white: '#fff',
+				black: '#000',
+				weirdblue: '#1c306f',
+				gray: {
 					DEFAULT: '#7f7f7f',
 					50: '#f6f6f6',
 					100: '#e7e7e7',

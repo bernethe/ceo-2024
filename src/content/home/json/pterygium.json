@@ -1,0 +1,33 @@
+{
+	"title": "Preguntas frecuentes sobre el pterigion",
+	"faqs": [
+		{
+			"q": "¿Qué es un pterigión?",
+			"a": "Un pterigión es un crecimiento anormal de tejido en la conjuntiva, la membrana transparente que cubre la superficie del ojo."
+		},
+		{
+			"q": "¿Cuáles son las causas del pterigión?",
+			"a": "El pterigión suele ser causado por la exposición crónica a la luz solar, al viento, al polvo y a otros irritantes ambientales. También puede estar relacionado con factores genéticos y ciertas condiciones oculares."
+		},
+		{
+			"q": "¿Cuáles son los síntomas del pterigión?",
+			"a": "Los síntomas comunes incluyen enrojecimiento del ojo, sensación de cuerpo extraño, ardor, picazón y visión borrosa si el pterigión crece lo suficiente para invadir el área central de la córnea."
+		},
+		{
+			"q": "¿Cuál es el tratamiento para el pterigión?",
+			"a": "El tratamiento varía según la gravedad de los síntomas y la progresión del pterigión. En casos leves, se pueden utilizar gotas lubricantes y medidas para proteger los ojos de la exposición al sol y al viento. En casos más avanzados, la cirugía puede ser necesaria para extirpar el pterigión y, a veces, se requiere un injerto de tejido para cubrir el área afectada."
+		},
+		{
+			"q": "¿Cómo se realiza la cirugía de pterigión?",
+			"a": "La cirugía de pterigión generalmente se realiza bajo anestesia local. El cirujano realiza una incisión para extirpar el tejido del pterigión y, si es necesario, coloca un injerto de tejido para cubrir el área afectada y prevenir la recurrencia."
+		},
+		{
+			"q": "¿Cuál es el tiempo de recuperación después de la cirugía de pterigión?",
+			"a": "La recuperación puede variar según la extensión de la cirugía y la respuesta individual del paciente. Por lo general, se recomienda evitar actividades extenuantes y proteger el ojo de la exposición al sol y al polvo durante varias semanas después de la cirugía. Se puede experimentar una leve incomodidad y visión borrosa temporalmente."
+		},
+		{
+			"q": "¿Cuáles son las posibles complicaciones de la cirugía de pterigión?",
+			"a": "Aunque es poco común, las complicaciones pueden incluir sangrado, infección, recurrencia del pterigión y cambios en la visión. Es importante seguir las instrucciones del oftalmólogo y asistir a todas las citas de seguimiento para monitorear la recuperación."
+		}
+	]
+}
