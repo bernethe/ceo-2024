@@ -3,7 +3,7 @@ import ScheduleAppointment from "../../interface/BtnScheduleAppointment.astro";
 import Img01 from '../../assets/ceo-home-1.webp';
 import Img02 from '../../assets/ceo-home-2.webp';
 ---
-<div class="container mx-auto">
+<div class="container mx-auto" id="cirugias">
 	<div class="md:flex md:flex-row md:items-end md:justify-center">
 		<div class="md:w-3/5">
 			<div class="p-4 mb-4">
@@ -30,7 +30,7 @@ import Img02 from '../../assets/ceo-home-2.webp';
 				<h3 class="mb-4 text-blue font-bold text-xl">Cataratas</h3>
 				<p class="mb-4">Este procedimiento rápido y sin dolor implica la eliminación del cristalino opacificado y su reemplazo por un lente intraocular.</p>
 				<p class="mb-4">Con la tecnología de facoemulsificación, podemos realizar este proceso con precisión y riesgos mínimos.</p>
-				<p class="mb-4"><a href="#" class="text-blue-600 italic underline">Ver más</a></p>
+				<p class="mb-4"><a href="/cataratas" class="text-blue-600 italic underline">Ver más</a></p>
 				<ScheduleAppointment />
 			</div>
 			<img src={Img02.src} alt="Cirugía de cataratas" class="w-full h-96 object-cover" />

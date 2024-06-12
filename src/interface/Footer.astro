@@ -1,16 +1,29 @@
 ---
 import MainLogoWhite from '../assets/logo-ceo-tinta.svg';
 import {LINKS} from '../_globals.js';
+import IcoWaInline from '../svg/IcoWaInline.astro';
+import IcoIg from '../svg/IcoIg.astro';
+import IcoFb from '../svg/IcoFb.astro';
+import IcoIn from '../svg/IcoIn.astro';
 ---
 <footer class="bg-blue text-white">
 	<div class="container mx-auto">
 		<div class="max-w-[200px] w-1/2 mx-auto">
 			<img src={MainLogoWhite.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo">
 		</div>
-		<div class="flex flex-wrap items-center justify-between py-4">
-			<div class="w-full md:w-1/2 text-center md:text-left">
+		<div class="md:flex py-4">
+			<div class="w-full md:w-1/4"></div>
+			<div class="w-full md:w-1/2 text-center md:text-left flex justify-center items-center">
 				<p>CEO - Cirugías Dr. Nelson Bravo García, Clínica Bíblica, Santa Ana.<br />
-					<a href={LINKS.WhatsApp} target="_blank">8713-7180</a>, Correo electrónico: <a href={`mailto:${LINKS.Email}`}>{LINKS.Email}</a></p>
+					<a href={LINKS.WhatsApp} target="_blank"><IcoWaInline /> 8713-7180</a>, Correo electrónico: <a href={`mailto:${LINKS.Email}`}>{LINKS.Email}</a></p>
+			</div>
+			<div class="w-full md:w-1/4 text-center">
+				<p class="my-4">Síguenos:</p>
+				<ul>
+					<li class="inline-block w-8"><a href={LINKS.Instagram} target="_blank"><IcoIg /></a></li>
+					<li class="inline-block w-8"><a href={LINKS.Facebook} target="_blank"><IcoFb /></a></li>
+					<li class="inline-block w-8"><a href={LINKS.LinkedIn} target="_blank"><IcoIn /></a></li>
+				</ul>
 			</div>
 		</div>
 	</div>

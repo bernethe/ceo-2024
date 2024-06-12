@@ -2,10 +2,11 @@
 import '@fontsource-variable/montserrat';
 import Header from '../interface/Header.astro';
 import Footer from '../interface/Footer.astro';
-let {desc, title} = Astro.props;
+let {desc, title, showResponsiveLogo} = Astro.props;
+if (showResponsiveLogo === undefined) showResponsiveLogo = true;
 ---
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,7 +16,7 @@ let {desc, title} = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class='font-body bg-sky text-black'>
-		<Header />
+		<Header showResponsiveLogo={showResponsiveLogo} />
 		<slot />
 		<Footer />
 	</body>
