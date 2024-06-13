@@ -37,7 +37,9 @@ if (showResponsiveLogo === undefined) showResponsiveLogo = true;
 <header class="md:border-b md:border-blue">
 	{
 		showResponsiveLogo && <div class="md:hidden">
-			<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 mx-auto" />
+			<a href="/">
+				<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 mx-auto" />
+			</a>
 		</div>
 	}
 	<div class="container mx-auto">
@@ -61,22 +63,22 @@ if (showResponsiveLogo === undefined) showResponsiveLogo = true;
 			<nav class="flex md:block justify-center">
 				<ul>
 					<li class="inline-block w-8">
-						<a href={LINKS.WhatsApp} target="_blank">
+						<a href={LINKS.WhatsApp} target="_blank" rel="noopener" aria-label="WhatsApp">
 							<IcoWA />
 						</a>
 					</li>
 					<li class="inline-block w-8">
-						<a href={LINKS.Instagram} target="_blank">
+						<a href={LINKS.Instagram} target="_blank" rel="noopener" aria-label="Instagram">
 							<IcoIG />
 						</a>
 					</li>
 					<li class="inline-block w-8">
-						<a href={LINKS.Facebook} target="_blank">
+						<a href={LINKS.Facebook} target="_blank" rel="noopener" aria-label="Facebook">
 							<IcoFB />
 						</a>
 					</li>
 					<li class="inline-block w-8">
-						<a href={LINKS.LinkedIn} target="_blank">
+						<a href={LINKS.LinkedIn} target="_blank" rel="noopener" aria-label="LinkedIn">
 							<IcoLI />
 						</a>
 					</li>

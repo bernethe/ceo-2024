@@ -20,9 +20,21 @@ import IcoIn from '../svg/IcoIn.astro';
 			<div class="w-full md:w-1/4 text-center">
 				<p class="my-4">Síguenos:</p>
 				<ul>
-					<li class="inline-block w-8"><a href={LINKS.Instagram} target="_blank"><IcoIg /></a></li>
-					<li class="inline-block w-8"><a href={LINKS.Facebook} target="_blank"><IcoFb /></a></li>
-					<li class="inline-block w-8"><a href={LINKS.LinkedIn} target="_blank"><IcoIn /></a></li>
+					<li class="inline-block w-8">
+						<a href={LINKS.Instagram} target="_blank" rel="noopener" aria-label="Instagram">
+							<IcoIg />
+						</a>
+					</li>
+					<li class="inline-block w-8">
+						<a href={LINKS.Facebook} target="_blank" rel="noopener" aria-label="Facebook">
+							<IcoFb />
+						</a>
+					</li>
+					<li class="inline-block w-8">
+						<a href={LINKS.LinkedIn} target="_blank" rel="noopener" aria-label="LinkedIn">
+							<IcoIn />
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
