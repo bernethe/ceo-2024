@@ -1,0 +1,7 @@
+---
+let {title, desc, index} = Astro.props;
+---
+<div class="md:w-1/3 p-4">
+    <div class={ `p-2 rounded-t-lg font-bold min-h-16 flex items-center ${ index%2 === 0 ? 'bg-blue text-white' : 'bg-blue-300 text-blue' }` }>{title}:</div>
+    <div class="p-2 rounded-b-lg bg-white min-h-16">{desc}</div>
+</div>

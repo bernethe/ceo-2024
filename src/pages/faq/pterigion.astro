@@ -1,0 +1,9 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import data from '../../content/json/pterygium.json';
+import FAQ from '../../interface/FAQ.astro';
+import IcoServ from "../../svg/IcoServPterigion.astro";
+---
+<MainLayout title='Pterigión | CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo'>
+	<FAQ {...data} MyIcon={IcoServ} />
+</MainLayout>

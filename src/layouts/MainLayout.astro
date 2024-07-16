@@ -1,8 +1,9 @@
 ---
 import '@fontsource-variable/montserrat';
+import '../styles/global.css';
 import Header from '../interface/Header.astro';
 import Footer from '../interface/Footer.astro';
-let {desc, title, image, showResponsiveLogo} = Astro.props;
+let {desc='', title, image, showResponsiveLogo} = Astro.props;
 if (showResponsiveLogo === undefined) showResponsiveLogo = true;
 if (image === undefined) image = '/og-ceo.webp';
 ---
@@ -13,12 +14,12 @@ if (image === undefined) image = '/og-ceo.webp';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={desc} />
+		{ desc === '' ? '' : <meta name="description" content={desc} /> }
 		<meta property="og:title" content={title} />
 		<meta property="og:image" content={image} />
 		<title>{title}</title>
 	</head>
-	<body class='font-body bg-sky text-black'>
+	<body class='font-body bg-bodybg text-black' id="inicio">
 		<Header showResponsiveLogo={showResponsiveLogo} />
 		<slot />
 		<Footer />

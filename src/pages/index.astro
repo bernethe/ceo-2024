@@ -1,19 +1,19 @@
 ---
-import Contact from '../content/home/Contact.astro';
-import Doctor from '../content/home/Doctor.astro';
-import FAQCataracts from '../content/home/FAQCataracts.astro';
-import FAQPterygium from '../content/home/FAQPterygium.astro';
-import Help from '../content/home/Help.astro';
 import Hero from '../content/home/Hero.astro';
-import ServicesCataract from '../content/home/ServicesCataract.astro';
+import MedicalCenter from '../content/home/MedicalCenter.astro';
+import Services from '../content/home/Services.astro';
+import FAQ from '../content/home/FAQ.astro';
+import HealthInsurance from '../content/home/HealthInsurance.astro';
+import Contact from '../content/home/Contact.astro';
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 <MainLayout title='CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo' desc='Centro de Especialidades Oftalmológicas, estamos comprometidos con su bienestar ocular a través de un especialista altamente calificado. Nuestra clínica está liderada por el Dr. Nelson Bravo experto en áreas fundamentales de la oftalmología.' showResponsiveLogo={false}>
-    <Hero />
-    <Help />
-    <ServicesCataract />
-    <Doctor />
-    <Contact />
-    <FAQCataracts />
-    <FAQPterygium />
+	<Hero />
+	<MedicalCenter />
+	<Services />
+	<div class="bg-circle bg-center bg-[length:200px_200px] md:bg-[length:512px_512px] bg-no-repeat">
+		<FAQ />
+		<HealthInsurance />
+	</div>
+	<Contact />
 </MainLayout>

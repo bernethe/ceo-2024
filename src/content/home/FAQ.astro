@@ -1,0 +1,48 @@
+---
+import BtnScheduleAppointment from "../../interface/BtnScheduleAppointment.astro";
+import IcoServCataratas from "../../svg/IcoServCataratas.astro";
+import IcoServRefractiva from "../../svg/IcoServRefractiva.astro";
+import IcoServPterigion from "../../svg/IcoServPterigion.astro";
+
+const faqs_sections = [
+	{
+		ico: IcoServCataratas,
+		label: "Cirugía de Catarata",
+		url: "/faq/cirugia-de-catarata",
+	},
+	{
+		ico: IcoServRefractiva,
+		label: "Cirugía Refractiva",
+		url: "/faq/cirugia-refractiva",
+	},
+	{
+		ico: IcoServPterigion,
+		label: "Pterigión",
+		url: "/faq/pterigion",
+	}
+];
+
+---
+<div id="faqs" class="container mx-auto text-blue py-24">
+	<h2 class="font-black text-2xl text-center">Preguntas y Respuestas</h2>
+	<div class="md:flex my-8 rounded-3xl overflow-hidden">
+		{
+			faqs_sections.map((section, index) => <a
+				href={section.url}
+				class={ index%2 === 0 ?
+						'block bg-gray-100 p-8 md:w-1/3 relative after:content-[""] after:absolute after:right-[-52px] after:top-[calc(50%-40px)] after:rotate-45 after:rounded-full after:border-[52px] after:border-solid after:border-l-blue-300 after:border-b-blue-300 after:border-r-transparent after:border-t-transparent last:after:hidden after:hidden md:after:block' :
+						'block bg-blue-300 p-8 md:w-1/3 relative after:content-[""] after:absolute after:right-[-52px] after:top-[calc(50%-40px)] after:rotate-45 after:rounded-full after:border-[52px] after:border-solid after:border-l-gray-100 after:border-b-gray-100 after:border-r-transparent after:border-t-transparent last:after:hidden after:hidden md:after:block'
+				}
+			>
+				<div class="w-1/3 mx-auto">
+					<section.ico />
+				</div>
+				<h3 class="font-bold text-xl my-4">{section.label}</h3>
+				<p class="">Click aquí para ver las preguntas frecuentes</p>
+			</a>)
+		}
+	</div>
+	<div class="text-center">
+		<BtnScheduleAppointment styled="blue" />
+	</div>
+</div>

@@ -1,6 +1,6 @@
 ---
+import MainLogoWhite from '../assets/logo-ceo-tinta.svg';
 import {LINKS} from '../_globals.js';
-import MainLogo from '../assets/logo-ceo.svg';
 import IcoFB from '../svg/IcoFb.astro';
 import IcoIG from '../svg/IcoIg.astro';
 import IcoLI from '../svg/IcoIn.astro';
@@ -11,16 +11,20 @@ const MAIN_MENU = [
 		url: '/#inicio'
 	},
 	{
-		label: 'El Especialista',
-		url: '/#doctor'
+		label: 'La Clínica',
+		url: '/#clinica'
 	},
 	{
-		label: 'Cirugías',
-		url: '/#cirugias'
+		label: 'Servicios',
+		url: '/#servicios'
 	},
 	{
 		label: 'Preguntas',
 		url: '/#faqs'
+	},
+	{
+		label: 'Seguro médico',
+		url: '/#seguros'
 	},
 	{
 		label: 'Contacto',
@@ -30,30 +34,30 @@ const MAIN_MENU = [
 let {showResponsiveLogo} = Astro.props;
 if (showResponsiveLogo === undefined) showResponsiveLogo = true;
 ---
-<button id="menu_btn" class="md:hidden text-2xl fixed top-2 right-2 bg-sky w-10 aspect-square z-50">
+<button id="menu_btn" class="md:hidden text-2xl fixed top-2 right-2 bg-blue-300 w-10 aspect-square z-50 border border-blue">
 	<span>☰</span>
 	<span class="hidden">×</span>
 </button>
-<header class="md:border-b md:border-blue">
+<header class="bg-blue text-white border-white">
 	{
 		showResponsiveLogo && <div class="md:hidden">
 			<a href="/">
-				<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 mx-auto" />
+				<img src={MainLogoWhite.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 mx-auto" />
 			</a>
 		</div>
 	}
 	<div class="container mx-auto">
-		<div id="menu_div" class="fixed z-40 md:static top-0 -right-full w-full h-dvh md:h-auto backdrop-blur-sm md:backdrop-blur-none bg-opacity-75 md:bg-opacity-0 bg-sky md:bg-transparent md:flex gap-4 items-center transition-all duration-300 ease-in-out p-4 md:p-0">
+		<div id="menu_div" class="fixed z-40 md:static top-0 -right-full w-full h-dvh md:h-auto backdrop-blur-sm md:backdrop-blur-none bg-opacity-75 md:bg-opacity-0 bg-blue md:bg-transparent md:flex gap-4 items-center transition-all duration-300 ease-in-out p-4 md:p-0">
 			<div>
 				<a href="/" class="block">
-					<img src={MainLogo.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 md:w-[135px]" />
+					<img src={MainLogoWhite.src} alt="CEO - Centro de Especialidades Oftalmológicas Dr. Nelson Bravo" class="w-1/2 md:w-[135px]" />
 				</a>
 			</div>
 			<nav class="font-bold md:flex-1 my-8 md:my-0">
-				<ul>
+				<ul class="md:flex md:justify-around">
 					{
 						MAIN_MENU.map( item => <li class="md:inline-block">
-							<a href={item.url} class="block p-2 hover:bg-blue hover:text-sky uppercase">
+							<a href={item.url} class="block p-2 hover:bg-blue hover:text-blue-300 uppercase">
 								{item.label}
 							</a>
 						</li>)

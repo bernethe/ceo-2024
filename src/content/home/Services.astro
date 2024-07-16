@@ -1,0 +1,59 @@
+---
+import BtnScheduleAppointment from "../../interface/BtnScheduleAppointment.astro";
+import ServiceSnippet from "../../interface/ServiceSnippet.astro";
+import ServicesDownImg from "../../assets/services-down.webp";
+
+const servicesData = [
+	{
+		title: "Consulta Oftalmológica General",
+		desc: "Evaluación completa para diagnosticar y tratar problemas oculares.",
+	},
+	{
+		title: "Tratamiento y Control de Enfermedades Oculares",
+		desc: "Manejo integral de diversas afecciones oculares."
+	},
+	{
+		title: "Control ocular para Pacientes Diabéticos e Hipertensos",
+		desc: "Seguimiento especializado para prevenir y tratar complicaciones oculares asociadas."
+	},
+	{
+		title: "Cirugía Refractiva con Láser",
+		desc: "Procedimiento avanzado para corregir problemas de visión."
+	},
+	{
+		title: "Cirugía para Miopía y Astigmatismo Elevado",
+		desc: "Solución quirúrgica personalizada para mejorar tu visión."
+	},
+	{
+		title: "Trasplante de Córnea",
+		desc: "Intervención para recuperar la claridad visual en casos de daño corneal."
+	},
+	{
+		title: "Cirugía de Catarata:",
+		desc: "Tratamiento eficaz para restaurar la visión en pacientes con cataratas."
+	},
+	{
+		title: "Cirugía de Pterigión",
+		desc: "Procedimiento para remover crecimiento anormal de tejido sobre la córnea."
+	}
+];
+---
+<div id="servicios" class="bg-blue-300 bg-services md:bg-center bg-no-repeat bg-cover aspect-[25/10]">
+	<div class="text-center text-white container mx-auto py-4">
+		<h2 class="font-black text-2xl px-4">Servicios</h2>
+		<p>En nuestral clínica, ofrecemos una amplia gama de servicios para el cuidado de tus ojos, incluyendo:</p>
+	</div>
+	<div class="container mx-auto md:flex flex-row flex-wrap items-center justify-center">
+		{
+			servicesData.map((service, index) => (
+				<ServiceSnippet {...service} index={index} />
+			))
+		}
+		<div class="md:w-1/3 p-4 flex justify-center items-center">
+			<BtnScheduleAppointment />
+		</div>
+	</div>
+</div>
+<div>
+	<img src={ServicesDownImg.src} alt="Servicios" class="w-full" />
+</div>

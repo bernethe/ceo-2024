@@ -1,23 +1,26 @@
 ---
 import BtnScheduleAppointment from "../../interface/BtnScheduleAppointment.astro";
-import {LINKS} from '../../_globals';
+import IcoHorario from "../../svg/IcoHorario.astro";
+import IcoMap from "../../svg/IcoMap.astro";
+import IcoWaInline from "../../svg/IcoWaInline.astro";
+import IcoEmail from "../../svg/IcoEmail.astro";
 ---
-<section class="bg-weirdblue" id="contacto">
-	<div class="md:bg-circle bg-no-repeat bg-[length:200px_200px] bg-[right_-120px_center]">
-		<div class="container mx-auto md:flex">
-			<div class="md:w-1/2 aspect-square md:aspect-video">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7859.70958394309!2d-84.19366470950438!3d9.946037390115562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f906f0b359e3%3A0x5f50c053344378ba!2sHospital%20Cl%C3%ADnica%20B%C3%ADblica%20Sede%20Santa%20Ana!5e0!3m2!1ses-419!2scr!4v1717980512073!5m2!1ses-419!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border-0 w-full h-full" title="Centro de Especialidades Oftalmológicas en Google Maps"></iframe>
-			</div>
-			<div class="md:w-1/2 p-4 text-white flex items-center">
-				<div>
-					<h3 class="mb-4 font-bold uppercase text-2xl">Contactanos</h3>
-					<p class="mb-4">CEO - Cirugías Dr. Nelson Bravo García<br />
-						Horario: Lunes a Viernes de 8:30 am a 5:30 pm.</p>
-					<p class="mb-8">Clínica Bíblica, Santa Ana.<br />
-					Correo electrónico: <a href={`mailto:${LINKS.Email}`}>{LINKS.Email}</a></p>
-					<BtnScheduleAppointment hasIcon={true} />
-				</div>
-			</div>
+<div class="bg-blue text-white" id="contacto">
+	<div class="container mx-auto md:flex">
+		<div class="md:w-1/2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7859.70958394309!2d-84.19366470950438!3d9.946037390115562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f906f0b359e3%3A0x5f50c053344378ba!2sHospital%20Cl%C3%ADnica%20B%C3%ADblica%20Sede%20Santa%20Ana!5e0!3m2!1ses-419!2scr!4v1717980512073!5m2!1ses-419!2scr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border-0 w-full h-full" title="Centro de Especialidades Oftalmológicas en Google Maps"></iframe>
+		</div>
+		<div class="md:w-1/2 px-4 md:px-24 py-24">
+			<h2 class="font-black text-2xl">Contactanos</h2>
+			<p class="my-4">CEO - Cirugías Dr. Nelson Bravo Gracia Especialidades Oftalmológicas S.A.</p>
+			<ul>
+				<li class="my-4"><IcoHorario /> Horario: Lunes a Viernes de 8:30 am a 5:30 pm.</li>
+				<li class="my-4"><a href="https://waze.com/ul? ll=50.83312,4.29766https://ul.waze.com/ul?preview_venue_id=180748387.1807549411.16607062&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank"><IcoMap /> Consultorio: Hospital Clínica Bíblica, Santa Ana.</a></li>
+				<li class="my-4"><a href="https://wa.me/50687137180" target="_blank"><IcoWaInline /> Teléfono: (506) 8713 7180</a></li>
+				<li class="my-4"><a href="mailto:especialidadesoftalmologicas@gmail.com"><IcoEmail /> especialidadesoftalmologicas@gmail.com</a></li>
+				<li class="my-4"><a href="mailto:cirugiasdrbravo@gmail.com"><IcoEmail /> cirugiasdrbravo@gmail.com</a></li>
+			</ul>
+			<BtnScheduleAppointment />
 		</div>
 	</div>
-</section>
+</div>

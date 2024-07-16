@@ -1,0 +1,37 @@
+---
+import BtnScheduleAppointment from "../../interface/BtnScheduleAppointment.astro";
+import CEO1 from "../../assets/ceo-1.webp";
+import DrImg from "../../assets/dr-nelson-bravo.webp";
+---
+<div class="container mx-auto md:flex md:items-center" id="clinica">
+	<div class="md:w-1/2 py-4">
+		<img src={CEO1.src} alt="Centro de Especialidades Oftalmológicas" class="w-1/2 md:w-full mx-auto" />
+	</div>
+	<div class="md:w-1/2 py-2">
+		<h2 class="font-black text-2xl text-blue px-4">Centro de Especialidades Oftalmológicas</h2>
+		<p class="px-10 my-4">El compromiso profesional de CEO es brindarte una solución personalizada para corregir tu condición visual y devolverte bienestar y libertad.</p>
+		<p class="px-10 my-4">CEO te ofrece un enfoque integral para mantener tu salud visual, combinando la última tecnología con la calidez y el trato personalizado que vos mereces. Entendiendo la importancia de la comunicación directa y precisa entre el paciente y el médico. Por eso, con el oftalmólogo que te atenderá podes hablar cómodamente, evacuar dudas y recibir apoyo en la toma de decisiones relacionadas con tu tratamiento oftalmológico.</p>
+		<p class="px-6 mx-4 md:px-10 py-4 my-4 font-bold bg-blue text-white rounded-md md:rounded-full">CEO es liderado por el Dr. Nelson Bravo, con más de 25 años de experiencia será tu aliado en el cuidado de tus ojos y la corrección de tu visión. ¡Estamos aquí para ayudarte a ver el mundo con claridad!</p>
+		<BtnScheduleAppointment styled="blue" />
+	</div>
+</div>
+<div class="container mx-auto md:flex md:items-center">
+	<div class="md:w-1/2 py-4">
+		<img src={DrImg.src} alt="Dr. Nelson Bravo García, CEO, Oftalmólogo, Experto en Cuidado Ocular con más de 25 años de experiencia" class="w-1/2 md:w-full mx-auto" />
+	</div>
+	<div class="md:w-1/2 py-2 text-blue">
+		<h2 class="font-black text-2xl text-blue px-4">El especialista</h2>
+		<p class="px-10 my-4"><strong>Doctorado en medicina, cirujano, con especialidad en oftalmología, costarricense y profesional de la Universidad de Costa Rica (UCR)</strong>. Con alta especialidad en cirugía refractiva y córnea de la Universidad de Buenos Aires, Argentina.</p>
+		<p class="px-10 my-4">Con participación y formación a nivel nacional e internacional en diversas temáticas tales como refracción, reanimación cardiopulmonar, soporte cardiaco avanzado, microcirugía vascular experimental, neuropediatría, entre otros.</p>
+		<p class="px-10 my-4">Su experiencia profesional ya suma más de 25 años en la atención de pacientes oftalmológicos, a nivel privado y público, en donde aún se mantiene siendo parte de los profesionales que fortalecen el servicio hospitalario de la Caja Costarricense del Seguro Social (CCSS).</p>
+	</div>
+</div>
+<div class="container mx-auto md:flex md:items-center mb-4">
+	<div class="mx-4 bg-gray-200 text-blue px-4 py-1 rounded">
+		<p class="my-4">En sus palabras…</p>
+		<blockquote class="italic">
+			<p class="my-4">“Estudié medicina por vocación y porque siempre me gustó el campo de la salud. De todas las especialidades, la oftalmología realmente captó mi interés, así que apenas culminé mis estudios de medicina general, salí del país a estudiar y obtener mi especialidad en Buenos Aires, Argentina. Escogí ese país por el reconocimiento internacional que tiene en el campo oftalmológico y tuve la oportunidad de aprender con maestros excepcionales como Carlos Argento, expositor de clase mundial quien realizara los lineamientos de la Cirugía Lasik moderna.</p>
+			<p class="my-4">En mi trayectoria he acumulado muchos años que me han permitido ayudar a gran cantidad de pacientes con diferentes padecimientos y juntos hemos encontrado una solución acorde que les ha devuelto la posibilidad de mantener una visión saludable y eso me llena de satisfacción.”</p>
+		</blockquote>
+	</div>
+</div>
