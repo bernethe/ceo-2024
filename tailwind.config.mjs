@@ -6,7 +6,9 @@ export default {
 			backgroundImage: {
 				'hero': "url('/src/assets/bg-hero.webp')",
 				'services': "url('/src/assets/bg-services.webp')",
-				'circle': "url('/src/assets/circle-fade-to-gray.svg')"
+				'circle': "url('/src/assets/circle-fade-to-gray.svg')",
+				'faq1': "url('/src/assets/bg-faq-1.webp')",
+				'faq2': "url('/src/assets/bg-faq-2.webp')"
 			},
 			fontFamily: {
 				'body': ['Montserrat Variable', 'sans-serif'],
