@@ -8,7 +8,8 @@ export default {
 				'services': "url('/src/assets/bg-services.webp')",
 				'circle': "url('/src/assets/circle-fade-to-gray.svg')",
 				'faq1': "url('/src/assets/bg-faq-1.webp')",
-				'faq2': "url('/src/assets/bg-faq-2.webp')"
+				'faq2': "url('/src/assets/bg-faq-2.webp')",
+				'contact': "url('/src/assets/bg-contact.webp')"
 			},
 			fontFamily: {
 				'body': ['Montserrat Variable', 'sans-serif'],
